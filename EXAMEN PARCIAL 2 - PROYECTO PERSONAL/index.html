@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Eczar&display=swap" rel="stylesheet" />
+    <title>Travel Tour</title>
+</head>
+
+<body>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .carousel-caption {
+            padding: 2rem 4rem;
+            text-align: center;
+            color: #fff;
+            box-shadow: 0px 0px 25px #222;
+            backdrop-filter: blur(10px);
+            font-weight: bolder;
+            color: #fff;
+        }
+
+        h5 {
+            font-weight: bold;
+        }
+    </style>
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" style="position: fixed; width: 100%; z-index: 1">
+        <div class="container">
+            <a href="#carrusel" class="navbar-brand" style="
+            font-family: 'Eczar', serif;
+            font-size: 24px;
+            font-weight: bolder;
+            ">Travel Tour</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+                aria-controls="navbarContent" aria-expanded="false" aria-label="navegacion menu">
+                <span class="navbar-toggler-icon"><i class=""></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="#carrusel" class="nav-link active"><i class="bi bi-house"></i> Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#Servicio" class="nav-link"><i class="bi bi-bag-heart-fill"></i> Servicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false"><i class="bi bi-globe-central-south-asia"></i> Regiones</a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#costa" class="dropdown-item"><i class="bi bi-balloon-fill"></i> Costa</a>
+                            </li>
+                            <li>
+                                <a href="#sierra" class="dropdown-item"><i class="bi bi-balloon-heart-fill"></i>
+                                    Sierra</a>
+                            </li>
+                            <li>
+                                <a href="#amazonia" class="dropdown-item"><i class="bi bi-balloon-heart-fill"></i>
+                                    Amazonia</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-devider" />
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-item"><i class="bi bi-brush-fill"></i> Galapagos</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar Destino" aria-label="Search" />
+                    <button class="btn btn-outline-success" type="submit">
+                        <span class="bi bi-search"></span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <br />
+    <br />
+    <div id="carruselJinson" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carruselJinson" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carruselJinson" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carruselJinson" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carruselJinson" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+                <img class="d-block w-100" height="565px"
+                    src="https://ecuadorstores.com/wp-content/uploads/Paisaje-de-la-amazonia-ecuatoriana.jpg" />
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>AMAZONIA ECUATORIANA</h5>
+                    <p>
+                        Te interesa viajar y conocer este gran mundo de la naturaleza.
+                    </p>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img class="d-block w-100" height="565px"
+                    src="https://cdn1.intriper.com/wp-content/uploads/2021/07/07121111/lugares-para-conocer-en-la-sierra-ecuatoriana-1024x576.jpg" />
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>SIERRA ECUATORIANA</h5>
+                    <p>
+                        Visita las montañas y volcanes que tiene la sierra ecuatoriana.
+                        vistas imaginables.
+                    </p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" height="565px"
+                    src="https://sites.google.com/site/miecuadorxmv/_/rsrc/1527439931861/costa/clima_costa_01.jpg" />
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>COSTA ECUATORIANA</h5>
+                    <p>Disfruta de las payas y esquisita comida costeña.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" height="565px"
+                    src="https://img.goraymi.com/2019/12/05/5446eefab33b499a4fa71ea36c9938f1_xl.jpg" />
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>GALAPAGOS</h5>
+                    <p>
+                        Isla de ensueño, conoce las gran maravilla de fauna y flora que
+                        ofrece las islas galapagos.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carruselJinson" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carruselJinson" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <div id="Servicio" class="container container-web-page">
+        <h2 class="text-center text-uppercase poppins-regular font-weight-bolder mt-5">Nuestros servicios</h2>
+        <br>
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-4">
+                <h5 class="text-center text-uppercase poppins-regular font-weight-bold">Las mejores rutas</h5>
+                <p class="text-center">¿Listo/a para descubrir los mejores itinerarios en Ecuador para practicar
+                    senderismo, ciclismo de montaña, mochilear y otras actividades al aire libre?</p>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+                <h5 class="text-center text-uppercase poppins-regular font-weight-bold">Guias experimentados</h5>
+                <p class="text-center">Excursiones ecologicas con guias experimentados e informativos</p>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+                <h5 class="text-center text-uppercase poppins-regular font-weight-bold">La mejor calidad</h5>
+                <p class="text-center">Visita lugares sin miedo, con gran calidad de guias ¿Que esperas aventarte a esta
+                    gran aventura?</p>
+            </div>
+        </div>
+
+        <h2 class="text-center text-uppercase poppins-regular font-weight-bolder mt-5">Regiones para viajar</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4 text-center">
+            <div class="col-12 col-sm-6 col-md-6">
+                <div class="card h-100">
+                    <img src="https://www.turismo.gob.ec/wp-content/uploads/2020/07/46273187_354405375318124_6752391864436916224_o.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Amazonia Ecuatoriana</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#amazonia" class="btn btn-outline-success">Visitar</a>
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6">
+                <div class="card h-100">
+                    <img src="https://www.ejemplos.co/wp-content/uploads/2019/01/Sierra-e1547501206553.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Sierra Ecuatoriana</h5>
+                        <p class="card-text">This card has supporting text below as a natural lead-in to additional
+                            content.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#sierra" class="btn btn-outline-success">Visitar</a>
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6">
+                <div class="card h-100">
+                    <img src="https://casaplayera.com/wp-content/uploads/2019/06/viajes-y-destinos-paisajes-pintorescos-en-la-costa-de-ecuador-imagen-1-_20190325075309-2000x2000-1.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Costa Ecuatoriana</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional content.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#costa" class="btn btn-outline-success">Visitar</a>
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6">
+                <div class="card h-100">
+                    <img src="https://imagenes.elpais.com/resizer/hW-bMyJ1VD6GxXsqJQJi_uxfwH8=/1960x1103/cloudfront-eu-central-1.images.arcpublishing.com/prisa/BBLBNN6RI3XN7ASSUTL2Y4QAUI.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Isla Galapagos</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional content.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#costa" class="btn btn-outline-success">Visitar</a>
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 id="amazonia" class="text-uppercase poppins-regular font-weight-bolder mt-5">Amazonia Ecuatoriana <span
+                class="bg-light text-success">-------------------------------------</span></h2>
+        <h6>Cliakear para reservar</h6>
+        <div class="row g-0 px-4 mb-5">
+            <div class="col">
+                <div class="row galeria">
+                    <div class="mb-4 col-6 col-lg-4">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#modal-galeria">
+                            <img src="img/podocarpus.jpg" class="d-block w-100" alt="" width="260px" height="260px">
+                        </a>
+                    </div>
+
+                    <div class="mb-4 col-12 col-lg-4">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#modal-galeria">
+                            <img src="img/cuyabeno.jpg" class="d-block w-100" alt="" width="260px" height="260px">
+                        </a>
+                    </div>
+
+                    <div class="mb-4 col-12 col-lg-4">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#modal-galeria">
+                            <img src="img/misahualli.jpg" class="d-block w-100" alt="" width="260px" height="260px">
+                        </a>
+                    </div>
+
+                    <div class="mb-4 col-6 col-lg-4">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#modal-galeria">
+                            <img src="img/puyo.jpg" class="d-block w-100" alt="" width="260px" height="260px">
+                        </a>
+                    </div>
+
+                    <div class="mb-4 col-6 col-lg-4">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#modal-galeria">
+                            <img src="img/sumaco.jpg" class="d-block w-100" alt="" width="260px" height="260px">
+                        </a>
+                    </div>
+                    <div class="mb-4 col-6 col-lg-4">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#modal-galeria">
+                            <img src="img/macas.jpg" class="d-block w-100" alt="" width="260px" height="260px">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Ventana Modal -->
+                <div class="modal fade" id="modal-galeria" tabindex="-1" aria-labelledby="modal-galeria"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Reservar tu lugar turstico</h5>
+                                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div>
+                                        <form action="">
+                                            <div class="row">
+                                                <div class="col-12 col-md-6 mb-3">
+                                                    <label for="nombre" class="form-label">Nombre</label>
+                                                    <input type="text" class="form-control" placeholder="Jinson Medina"
+                                                        id="nombre">
+                                                </div>
+                                                <div class="col-12 col-md-6 mb-3">
+                                                    <label for="correo" class="form-label">Correo</label>
+                                                    <input type="email" class="form-control"
+                                                        placeholder="correo@correo.com" id="correo">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12 col-md-6 mb-3">
+                                                    <label for="mensaje" class="form-label">Mensaje</label>
+                                                    <textarea name="mensaje" id="mensaje"
+                                                        class="form-control"></textarea>
+                                                </div>
+                                                <div class="col-12 col-md-6 mb-3">
+                                                    <div class="row">
+                                                        <div class="col-12 col-sm-6 mb-3">
+                                                            <label class="form-label">Cuantos dias</label>
+                                                            <div class="form-check">
+                                                                <input type="radio" class="form-check-input"
+                                                                    name="estado-civil" id="soltero">
+                                                                <label for="soltero" class="form-check-label">7
+                                                                    dias</label>
+                                                            </div>
+                                                            <div class="form-check">
+                                                                <input type="radio" class="form-check-input"
+                                                                    name="estado-civil" id="casado">
+                                                                <label for="casado" class="form-check-label">20
+                                                                    dias</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 col-sm-6 mb-3">
+                                                            <label class="form-label">Region</label>
+                                                            <select name="pais" id="pais" class="form-select">
+                                                                <option value="mexico">Amazonia</option>
+                                                                <option value="españa">Sierra</option>
+                                                                <option value="argentina">Costa</option>
+                                                                <option value="argentina">Isla Galapagos</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12 d-flex justify-content-center">
+                                                    <div>
+                                                        <div class="form-check mb-3">
+                                                            <input type="checkbox" name="terminos" id="terminos"
+                                                                class="form-check-input">
+                                                            <label for="terminos" class="form-check-label">Acepto los
+                                                                terminos y condiciones</label>
+                                                        </div>
+                                                        <button type="submit"
+                                                            class="col-12 btn btn-primary">Enviar</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-outline-danger"
+                                        data-bs-dismiss="modal">Cancelar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 id="sierra" class="text-uppercase poppins-regular font-weight-bolder mt-5">Sierra Ecuatoriana <span
+                class="bg-light text-danger">-------------------------------------</span></h2>
+        <h6>Cliakear para reservar</h6>
+        <div class="row g-0 px-4 mb-5">
+            <div class="col">
+                <div class="row galeria">
+                    <div class="mb-4 col-6 col-lg-4">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#modal-galeria">
+                            <img src="img/sierra1.jpg" class="d-block w-100" alt="" width="260px" height="260px">
+                        </a>
+                    </div>
+                    <div class="mb-4 col-12 col-lg-4">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#modal-galeria">
+                            <img src="img/sierra2.jpg" class="d-block w-100" alt="" width="260px" height="260px">
+                        </a>
+                    </div>
+                    <div class="mb-4 col-12 col-lg-4">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#modal-galeria">
+                            <img src="img/sierra3.jpg" class="d-block w-100" alt="" width="260px" height="260px">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h2 id="costa" class="text-uppercase poppins-regular font-weight-bolder mt-5">Costa Ecuatoriana <span
+                class="bg-light text-warning">-------------------------------------</span></h2>
+        <h6>Cliakear para reservar</h6>
+        <div class="row g-0 px-4 mb-5">
+            <div class="col">
+                <div class="row galeria">
+                    <div class="mb-4 col-6 col-lg-4">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#modal-galeria">
+                            <img src="img/costa1.jpg" class="d-block w-100" alt="" width="260px" height="260px">
+                        </a>
+                    </div>
+                    <div class="mb-4 col-12 col-lg-4">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#modal-galeria">
+                            <img src="img/costa2.jpg" class="d-block w-100" alt="" width="260px" height="260px">
+                        </a>
+                    </div>
+                    <div class="mb-4 col-12 col-lg-4">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#modal-galeria">
+                            <img src="img/costa3.jpg" class="d-block w-100" alt="" width="260px" height="260px">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <h2 class="text-center text-uppercase poppins-regular font-weight-bolder mt-5">necesitas ayuda</h2>
+            <div class="col-6">
+                <form action="">
+                    <div class="mb-3">
+                        <label for="correo" class="form-label">Correo Electronico</label>
+                        <input type="text" class="form-control" id="correo" aria-describedby="ayuda-correo">
+                        <div id="ayuda-correo" class="form-text">
+                            Te enviaremos un mensaje de confirmación.
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="mensaje" class="form-label">Mensaje</label>
+                        <textarea class="form-control" name="mensaje" id="mensaje"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-outline-primary">Enviar</button>
+                </form>
+            </div>
+
+            <div class="col-6">
+                <button class="btn btn-outline-primary btn-lg" data-bs-toggle="modal" data-bs-target="#modal-galeria">
+                    Reservar Lugar turstico
+                </button>
+                <br>
+                <a class="btn btn-outline-primary btn-lg mt-3" href="/portfolio.html">Portafolio</a>
+                <a class="btn btn-outline-primary btn-lg mt-3" href="/informacion.html">Informacion</a>
+            </div>
+        </div>
+    </div>
+
+    <hr class="mt-5">
+    <footer class="text-center text-white bg-body-tertiary">
+        <div class="container p-4">
+            <section>
+                <div class="row">
+                    <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                        <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
+                            <img src="/img/costa1.jpg" class="w-100" />
+
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                        <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
+                            <img src="/img/cuyabeno.jpg" class="w-100" />
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                        <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
+                            <img src="/img/sierra1.jpg" class="w-100" />
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                        <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
+                            <img src="/img/sierra3.jpg" class="w-100" />
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                        <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
+                            <img src="https://mdbcdn.b-cdn.net/img/new/fluid/city/115.webp" class="w-100" />
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                        <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
+                            <img src="https://mdbcdn.b-cdn.net/img/new/fluid/city/116.webp" class="w-100" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="text-center text-dark p-3 bg-body-tertiary">
+            © 2023 Copyright:
+            TravelTour.jinson.com compañia de viajes
+        </div>
+    </footer>
+
+    <script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
